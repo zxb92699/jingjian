@@ -86,3 +86,59 @@ footer{
     text-align:center;
     padding:30px;
 }
+.home-menu{
+
+    padding:120px 8%;
+
+    background:#000;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+}
+
+.menu-card{
+
+    height:300px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    text-decoration:none;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.4s;
+
+    background:#111;
+}
+
+.menu-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#caa36d;
+}
+
+.menu-card h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    color:#caa36d;
+}
+
+.menu-card p{
+
+    color:#aaa;
+}
