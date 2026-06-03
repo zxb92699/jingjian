@@ -1,22 +1,22 @@
-
-const items=document.querySelectorAll('.fade');
-const io=new IntersectionObserver(es=>{
-es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
-});
-items.forEach(i=>io.observe(i));
 const enterBtn = document.getElementById("enterBtn");
 
-if (enterBtn) {
+if(enterBtn){
 
-    enterBtn.addEventListener("click", () => {
+    enterBtn.addEventListener("click",()=>{
 
-        document.getElementById("bgm").play();
+        const bgm = document.getElementById("bgm");
 
-        document.getElementById("intro").style.opacity = "0";
+        if(bgm){
+            bgm.play();
+        }
 
-        setTimeout(() => {
-            document.getElementById("intro").remove();
-        }, 1000);
+        const intro = document.getElementById("intro");
+
+        intro.style.opacity="0";
+
+        setTimeout(()=>{
+            intro.style.display="none";
+        },1000);
 
     });
 
