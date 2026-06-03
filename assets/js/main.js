@@ -15,7 +15,7 @@ if (enterBtn) {
         document.getElementById("intro").style.opacity = "0";
 
         setTimeout(() => {
-            document.getElementById("intro").style.display = "none";
+            document.getElementById("intro").remove();
         }, 1000);
 
     });
