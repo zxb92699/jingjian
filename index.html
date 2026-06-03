@@ -147,3 +147,57 @@
 </body>
 
 </html>
+/* 摄影页 */
+
+.photo-gallery{
+
+    width:92%;
+
+    max-width:1600px;
+
+    margin:auto;
+
+    column-count:3;
+
+    column-gap:20px;
+
+    padding-bottom:120px;
+}
+
+.photo-gallery img{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+    display:block;
+
+    break-inside:avoid;
+
+    transition:.4s;
+
+    cursor:pointer;
+}
+
+.photo-gallery img:hover{
+
+    transform:scale(1.02);
+}
+
+@media(max-width:900px){
+
+    .photo-gallery{
+
+        column-count:2;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .photo-gallery{
+
+        column-count:1;
+    }
+
+}
