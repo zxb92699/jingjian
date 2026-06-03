@@ -92,18 +92,24 @@ footer{
 
     background:#000;
 
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
+    display:flex;
 
     gap:30px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
 }
 
 .menu-card{
 
-    height:300px;
+    width:500px;
 
-    border:1px solid rgba(255,255,255,.15);
+    height:260px;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.1);
 
     text-decoration:none;
 
@@ -118,8 +124,6 @@ footer{
     align-items:center;
 
     transition:.4s;
-
-    background:#111;
 }
 
 .menu-card:hover{
