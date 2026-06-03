@@ -1,123 +1,148 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>镜头之间 | 宗晓彬</title>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>镜间 | 宗晓彬</title>
-
-    <link rel="stylesheet"
-          href="assets/css/style.css">
+```
+<link rel="stylesheet" href="assets/css/style.css">
+```
 
 </head>
 
 <body>
 
-    <!-- 开场页 -->
+```
+<!-- 开场页 -->
 
-        <div class="intro-content">
+<div id="intro">
 
-            <h1>镜头之间</h1>
+    <div class="intro-overlay"></div>
 
-            <p>
-            宗晓彬个人作品集
-            </p>
+    <div class="intro-content">
 
-            <button id="enterBtn">
-                开始观看
-            </button>
+        <h1>镜头之间</h1>
 
-        </div>
+        <p>宗晓彬个人作品集</p>
+
+        <button id="enterBtn">
+            开始观看
+        </button>
 
     </div>
 
-    <!-- 音乐 -->
-
-    <audio id="bgm" loop>
-
-        <source src="assets/audio/bgm.mp3"
-                type="audio/mpeg">
-
-    </audio>
-
-    <!-- 导航 -->
-
-    <nav>
-
-<div>镜头之间</div>
-
-<div>
-
-<a href="works.html">视频创作</a>
-
-<a href="photography.html">摄影作品</a>
-
 </div>
+
+<!-- 背景音乐 -->
+
+<audio id="bgm" loop>
+    <source src="assets/audio/bgm.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 导航 -->
+
+<nav>
+
+    <div class="logo">
+        镜头之间
+    </div>
+
+    <div class="nav-links">
+
+        <a href="works.html">
+            视频创作
+        </a>
+
+        <a href="photography.html">
+            摄影作品
+        </a>
+
+    </div>
 
 </nav>
 
-    <!-- 视频背景 -->
+<!-- 视频封面 -->
 
-    <section class="hero">
+<section class="hero">
 
-        <video
-            class="hero-video"
-            autoplay
-            muted
-            loop
-            playsinline>
+    <video class="hero-video"
+           autoplay
+           muted
+           loop
+           playsinline>
 
-            <source
-                src="assets/videos/showreel.mp4"
+        <source src="assets/videos/showreel.mp4"
                 type="video/mp4">
 
-        </video>
+    </video>
 
-<div class="hero-content">
+    <div class="hero-overlay"></div>
 
-    <h1>镜头之间</h1>
+    <div class="hero-content">
 
-    <p>
-        宗晓彬个人作品集
-    </p>
+        <h1>镜头之间</h1>
 
-</div>
+        <p>
+            宗晓彬个人作品集
+        </p>
 
-    </section>
-<section class="home-menu">
+    </div>
 
-    <a href="works.html" class="menu-card">
+</section>
+
+<!-- 首页入口 -->
+
+<section class="home-links">
+
+    <a href="works.html" class="link-block">
+
+        <span>VIDEO</span>
 
         <h2>视频创作</h2>
 
-        <p>
-            乡村振兴｜活动宣传｜纪录短片｜AI影像
-        </p>
-
     </a>
 
-    <a href="photography.html" class="menu-card">
+    <a href="photography.html" class="link-block">
+
+        <span>PHOTOGRAPHY</span>
 
         <h2>摄影作品</h2>
-
-        <p>
-            风光摄影｜人文纪实｜乡村影像
-        </p>
 
     </a>
 
 </section>
-    <footer>
 
-        © 2026 镜间 | 宗晓彬
+<!-- 关于 -->
 
-    </footer>
+<section class="about">
 
-    <script src="assets/js/main.js"></script>
+    <h2>宗晓彬</h2>
+
+    <p>
+        视觉创作者
+    </p>
+
+    <p>
+        风景创作 · 乡村振兴 · 活动宣传 · AI影像
+    </p>
+
+    <p>
+        用镜头记录人与土地之间的故事。
+    </p>
+
+</section>
+
+<footer>
+
+    © 2026 镜头之间
+
+</footer>
+
+<script src="assets/js/main.js"></script>
+```
 
 </body>
 
